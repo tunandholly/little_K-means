@@ -31,7 +31,7 @@ def plot_kmeans_clustering(X, n_clusters):
 def find_optimal_clusters(X):
     silhouette_scores = []
     for n_clusters in range(2, 20):
-        kmeans = KMeans(n_clusters=n_clusters, random_state=42).fit(X)
+        kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(X)
         score = silhouette_score(X, kmeans.labels_)
         silhouette_scores.append(score)
 
