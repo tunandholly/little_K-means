@@ -45,13 +45,13 @@ def find_optimal_clusters(X):
     return optimal_clusters
 
 
-# Generate and plot the dataset
+# Generate and plot the dataset (you can input an integer as centers of initial data)
 print("Please input an integer as n for centers: ")
 user_input1 = input()
 user_centers = int(user_input1)
 X = generate_and_plot_data(user_centers)
 
-# User-defined number of clusters for K-means
+# User-defined number of clusters for K-means 
 print("Please input an integer as n for n-clusters: ")
 user_input2 = input()
 user_clusters = int(user_input2)
